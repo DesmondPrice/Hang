@@ -7,15 +7,20 @@ def check_already_guessed(letter, array):
     else:
         return False
 
+
 import random
+
+
 answer = list(random.choice(array))
-k=0
-m=0
-riddle=[]
-already_guessed = []
-for i in range(len(answer)):
-    riddle.append('*')
+
+
 def game():
+    k = 0
+    m = 0
+    riddle = []
+    already_guessed = []
+    for i in range(len(answer)):
+        riddle.append('*')
     while k<5 and m < len(answer):
         print('Guess a letter')
         letter = input()
@@ -41,5 +46,5 @@ def game():
         print('Sorry! You lost!')
     else:
         print('Congratulations! You won!')
-
-game()
+if __name__ == '__main__':
+    game()

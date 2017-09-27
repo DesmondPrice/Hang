@@ -12,7 +12,7 @@ setup(
     url="https://github.com/DesmondPrice/Hang.git",
     license="MIT",
     packages=[
-        "hang",
+        "bin",
     ],
     install_requires=[
     ],
