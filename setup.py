@@ -5,7 +5,7 @@
 from setuptools import setup
 
 setup(
-    name="hang",
+    name="Hang",
     version="0.0.0",
     author="Artem Zharinov",
     author_email="ortemko@list.ru",
