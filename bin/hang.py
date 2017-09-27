@@ -8,7 +8,7 @@ def check_already_guessed(letter, array1):
     return letter in array1
 
 
-ANSWER_SMTH = list(random.choice(array_papaprpiwsewer))
+ANSWER_SMTH = list(random.choice(ARRAY_CAPS))
 
 
 def game():
@@ -16,15 +16,15 @@ def game():
     counter = 0
     riddle = []
     already_guessed = []
-    for i in range(len(answer_smth)):
+    for i in range(len(ANSWER_SMTH)):
         riddle.append('*')
-    while k < 5 and counter < len(answer_smth):
+    while k < 5 and counter < len(ANSWER_SMTH):
         print('Guess a letter')
         letter = input()
-        if letter in answer_smth and not check_already_guessed(letter, already_guessed):
+        if letter in ANSWER_SMTH and not check_already_guessed(letter, already_guessed):
             print('Nice!\n')
             already_guessed.append(letter)
-            for i, elem in enumerate(answer_smth):
+            for i, elem in enumerate(ANSWER_SMTH):
                 if elem == letter:
                     riddle[i] = letter
                     counter += 1
