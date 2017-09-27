@@ -21,7 +21,8 @@ def game():
     while k < 5 and counter < len(ANSWER_SMTH):
         print('Guess a letter')
         letter = input()
-        if letter in ANSWER_SMTH and not check_already_guessed(letter, already_guessed):
+        if letter in ANSWER_SMTH and \
+                not check_already_guessed(letter, already_guessed):
             print('Nice!\n')
             already_guessed.append(letter)
             for i, elem in enumerate(ANSWER_SMTH):
