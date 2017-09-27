@@ -1,14 +1,14 @@
 import random
 
 
-array_papaprpiwsewer = ['panda', 'joker', 'finish']
+ARRAY_CAPS = ['panda', 'joker', 'finish']
 
 
 def check_already_guessed(letter, array1):
     return letter in array1
 
 
-answer_smth = list(random.choice(array_papaprpiwsewer))
+ANSWER_SMTH = list(random.choice(array_papaprpiwsewer))
 
 
 def game():
@@ -47,4 +47,3 @@ def game():
 
 if __name__ == '__main__':
     game()
-
